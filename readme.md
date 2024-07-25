@@ -50,7 +50,7 @@ This is an E-commerce API that provides functionality for authentication, author
 
 ### API Endpoints
 
-Check details here: `<a href ="./Docs/docs.md"> docs </a>`
+Check details here: <a href ="./Docs/docs.md"> docs </a>
 
 Upon successful validation, the amount is deducted from the consumer's account and transferred to their respective seller's account. The cart is deleted and the product's stock is updated. The transaction is atomic to ensure no data inconsistency.
 
