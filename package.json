@@ -24,8 +24,6 @@
   "devDependencies": {
     "install": "^0.13.0",
     "nodemon": "^3.1.4",
-    "npm": "^10.8.2",
-    "swagger-jsdoc": "^6.2.8",
-    "swagger-ui-express": "^5.0.1"
+    "npm": "^10.8.2"
   }
 }

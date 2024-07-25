@@ -5,7 +5,6 @@ const router = express.Router();
 const { validateSignup, encryptPassword } = require('../../Utils/auth');;
 const { signJWT, setCookie } = require('../../Utils/auth');
 
-// Improved error handling middleware
 
 router.post('/', async (req, res) => {
     const user = req.body;

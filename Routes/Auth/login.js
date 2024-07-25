@@ -7,7 +7,6 @@ const { validateLogin } = require('../../Utils/auth');
 const jwt = require('jsonwebtoken');
 const { signJWT, setCookie } = require('../../Utils/auth');
 
-// Improved error handling middleware
 
 router.post('/', async (req, res) => {
     const { email, password } = req.body;

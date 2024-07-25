@@ -6,7 +6,7 @@ This is an E-commerce API that provides functionality for authentication, author
 
 - **Authentication & Authorization**: Secure signup and login with access control for different user roles.
 - **Seller Operations**: Sellers can add, update, and delete products.
-- **Consumer Operations**: 
+- **Consumer Operations**:
   - Consumers can create multiple carts and add products to the cart from different sellers.
   - Consumers can have multiple addresses.
   - Consumers can checkout a cart using any of their saved addresses.
@@ -27,39 +27,32 @@ This is an E-commerce API that provides functionality for authentication, author
 
 1. Clone the repository:
 
-    ```bash
-    git clone https://github.com/yourusername/e-commerce-api.git
-    cd e-commerce-api
-    ```
-
+   ```bash
+   git clone https://github.com/yourusername/e-commerce-api.git
+   cd e-commerce-api
+   ```
 2. Install dependencies:
 
-    ```bash
-    npm install
-    ```
-
+   ```bash
+   npm install
+   ```
 3. Create a `.env` file in the root directory and add the following variables:
 
-    ```env
-    DATABASE_URL=your_mongodb_connection_string
-    SECRET_KEY=your_secret_key
-    ```
-
+   ```env
+   DATABASE_URL=your_mongodb_connection_string
+   SECRET_KEY=your_secret_key
+   ```
 4. Start the server:
 
-    ```bash
-    npm start
-    ```
-    
-### Order Processing
+   ```bash
+   npm start
+   ```
 
-Orders are processed with the following validations:
+### API Endpoints
 
-- Product availability
-- Consumer's balance
-- Address validity
+Check details here: `<a href ="./Docs/docs.md"> docs </a>`
 
-Upon successful validation, the amount is deducted from the consumer's account and transferred to the seller's account. The transaction is atomic to ensure no data inconsistency.
+Upon successful validation, the amount is deducted from the consumer's account and transferred to their respective seller's account. The cart is deleted and the product's stock is updated. The transaction is atomic to ensure no data inconsistency.
 
 ## Technologies Used
 
@@ -73,4 +66,3 @@ Upon successful validation, the amount is deducted from the consumer's account a
 ## Contributing
 
 Documentation is in progress. Contributions are welcome! Please open an issue or submit a pull request.
-

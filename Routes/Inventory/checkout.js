@@ -6,12 +6,13 @@ const Address = require('../../Models/Address');
 const Order = require('../../Models/Order');
 const Seller = require('../../Models/Seller');
 
+const { isOwner } = require('../../Middlewares/owner');
 const mongoose = require('mongoose');
 
 const express = require('express');
 const router = express.Router();
 
-router.post('/:id', isAuthenticated, isAuthorized('consumer'), async (req, res) => {
+router.post('/:id', isAuthenticated, isAuthorized('consumer'), isOwner, async (req, res) => {
     const user_id = req.user.user_id;
     const cart_id = req.params.id;
     const { address_id } = req.body;
