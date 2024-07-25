@@ -14,6 +14,10 @@ This is an E-commerce API that provides functionality for authentication, author
   - Validations are performed for each order.
   - Amount is deducted from the consumer and transferred to the seller upon successful order processing.
   - Transactions are atomic, ensuring no data inconsistency.
+ 
+## API Endpoints
+
+Check details here: <a href ="./Docs/docs.md"> docs </a>
 
 ## Getting Started
 
@@ -47,12 +51,6 @@ This is an E-commerce API that provides functionality for authentication, author
    ```bash
    npm start
    ```
-
-### API Endpoints
-
-Check details here: <a href ="./Docs/docs.md"> docs </a>
-
-Upon successful validation, the amount is deducted from the consumer's account and transferred to their respective seller's account. The cart is deleted and the product's stock is updated. The transaction is atomic to ensure no data inconsistency.
 
 ## Technologies Used
 
