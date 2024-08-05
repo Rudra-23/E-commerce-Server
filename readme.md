@@ -62,5 +62,4 @@ Check details here: <a href ="./Docs/docs.md"> docs </a>
 - bcrypt for password hashing
 
 ## Contributing
-
-Documentation is in progress. Contributions are welcome! Please open an issue or submit a pull request.
+Contributions are welcome! Please open an issue or submit a pull request.
