@@ -32,8 +32,8 @@ Check details here: <a href ="./Docs/docs.md"> docs </a>
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/e-commerce-api.git
-   cd e-commerce-api
+   git clone https://github.com/Rudra-23/E-commerce-Server.git
+   cd E-commerce-Server
    ```
 2. Install dependencies:
 
